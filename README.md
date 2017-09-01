@@ -1,2 +1,2 @@
-# errors-notification
+# Errors Notification
 The Notification Pattern
