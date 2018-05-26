@@ -2,14 +2,14 @@
 An easy to use, implementation of the [Notification Pattern][notification-pattern]
 
 [![Software License][ico-license]][link-license]
-<!--[![Latest Version on Packagist][ico-version]][link-packagist]-->
+[![Latest Version on Packagist][ico-version]][link-packagist]
 <!--[![Build Status][ico-travis]][link-travis]-->
 <!--[![Coverage Status][ico-scrutinizer]][link-scrutinizer]-->
 <!--[![Quality Score][ico-code-quality]][link-code-quality]-->
 
 *TBD*
 
-# TL;DR
+## TL;DR
 
 ## Install
 
@@ -45,5 +45,7 @@ The BSD 2-Clause License. Please see [LICENSE][link-license] for more informatio
 [notification-pattern]: https://martinfowler.com/eaaDev/Notification.html
 
 [ico-license]: https://img.shields.io/badge/License-BSD%202--Clause-blue.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/zeeproject/errors-notification.svg?style=flat-square
 
 [link-license]: LICENSE
+[link-packagist]: https://packagist.org/packages/zeeproject/errors-notification
