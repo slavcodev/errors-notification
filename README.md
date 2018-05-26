@@ -3,9 +3,9 @@ An easy to use, implementation of the [Notification Pattern][notification-patter
 
 [![Software License][ico-license]][link-license]
 [![Latest Version on Packagist][ico-version]][link-packagist]
-<!--[![Build Status][ico-travis]][link-travis]-->
-<!--[![Coverage Status][ico-scrutinizer]][link-scrutinizer]-->
-<!--[![Quality Score][ico-code-quality]][link-code-quality]-->
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
 
 *TBD*
 
@@ -46,6 +46,12 @@ The BSD 2-Clause License. Please see [LICENSE][link-license] for more informatio
 
 [ico-license]: https://img.shields.io/badge/License-BSD%202--Clause-blue.svg?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/zeeproject/errors-notification.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/zee/errors-notification/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/zee/errors-notification.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/zee/errors-notification.svg?style=flat-square
 
 [link-license]: LICENSE
 [link-packagist]: https://packagist.org/packages/zeeproject/errors-notification
+[link-travis]: https://travis-ci.org/zee/errors-notification
+[link-scrutinizer]: https://scrutinizer-ci.com/g/zee/errors-notification/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/zee/errors-notification
