@@ -1,8 +1,6 @@
 <?php
 /**
- * This file is part of Zee Project.
- *
- * @see https://github.com/zee/
+ * {@see https://github.com/zee/ Zee Project (c)}
  */
 
 declare(strict_types=1);
@@ -11,15 +9,10 @@ namespace Zee\Errors\Tests;
 
 use Zee\Errors\Error;
 
-/**
- * Class ErrorTest.
- */
 final class ErrorTest extends TestCase
 {
     /**
      * @test
-     *
-     * @return Error
      */
     public function errorContainsMessageAndItsContextData(): Error
     {
@@ -34,10 +27,8 @@ final class ErrorTest extends TestCase
     /**
      * @test
      * @depends errorContainsMessageAndItsContextData
-     *
-     * @param Error $error
      */
-    public function canBeCastedToString(Error $error)
+    public function canBeCastedToString(Error $error): void
     {
         self::assertSame('Something went wrong', (string) $error);
     }

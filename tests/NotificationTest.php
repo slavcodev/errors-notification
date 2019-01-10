@@ -1,8 +1,6 @@
 <?php
 /**
- * This file is part of Zee Project.
- *
- * @see https://github.com/zee/
+ * {@see https://github.com/zee/ Zee Project (c)}
  */
 
 declare(strict_types=1);
@@ -12,15 +10,10 @@ namespace Zee\Errors\Tests;
 use Zee\Errors\Error;
 use Zee\Errors\Notification;
 
-/**
- * Class NotificationTest.
- */
 final class NotificationTest extends TestCase
 {
     /**
      * @test
-     *
-     * @return Notification
      */
     public function canAddMultipleErrorsAndCountThem(): Notification
     {
@@ -37,8 +30,6 @@ final class NotificationTest extends TestCase
     /**
      * @test
      * @depends canAddMultipleErrorsAndCountThem
-     *
-     * @param Notification $notification
      */
     public function canIterateErrors(Notification $notification): void
     {
@@ -50,8 +41,6 @@ final class NotificationTest extends TestCase
     /**
      * @test
      * @depends canAddMultipleErrorsAndCountThem
-     *
-     * @param Notification $notification
      */
     public function canGenerateListOfErrorMessages(Notification $notification): void
     {
@@ -61,8 +50,6 @@ final class NotificationTest extends TestCase
     /**
      * @test
      * @depends canAddMultipleErrorsAndCountThem
-     *
-     * @param Notification $notification
      */
     public function canClearNotificationErrors(Notification $notification): void
     {
