@@ -1,8 +1,6 @@
 <?php
 /**
- * This file is part of Zee Project.
- *
- * @see https://github.com/zee/
+ * {@see https://github.com/zee/ Zee Project (c)}
  */
 
 declare(strict_types=1);
@@ -14,18 +12,12 @@ use Countable;
 use IteratorAggregate;
 use Traversable;
 
-/**
- * Class Notification.
- */
 final class Notification implements Countable, IteratorAggregate
 {
     private $errors = [];
 
     /**
      * Adds new error to the notification.
-     *
-     * @param string $message
-     * @param array $context
      */
     public function addError(string $message, array $context = []): void
     {
@@ -34,8 +26,6 @@ final class Notification implements Countable, IteratorAggregate
 
     /**
      * Returns whether the notification has any errors.
-     *
-     * @return bool
      */
     public function hasErrors(): bool
     {
@@ -54,7 +44,7 @@ final class Notification implements Countable, IteratorAggregate
     }
 
     /**
-     * @return array
+     * Returns list of error messages only.
      */
     public function getErrorMessages(): array
     {
@@ -67,9 +57,7 @@ final class Notification implements Countable, IteratorAggregate
     }
 
     /**
-     * Counts the errors.
-     *
-     * @inheritdoc
+     * Counts the errors in the notification.
      */
     public function count(): int
     {
@@ -79,9 +67,7 @@ final class Notification implements Countable, IteratorAggregate
     /**
      * Builds the iterator by errors.
      *
-     * @inheritdoc
-     *
-     * @return Traversable|Error[]
+     * @return Error[]
      */
     public function getIterator(): Traversable
     {
