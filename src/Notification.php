@@ -67,7 +67,7 @@ final class Notification implements Countable, IteratorAggregate
     /**
      * Builds the iterator by errors.
      *
-     * @return Error[]
+     * @return Traversable|Error[]
      */
     public function getIterator(): Traversable
     {
