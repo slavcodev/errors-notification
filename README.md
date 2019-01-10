@@ -1,5 +1,4 @@
 # Errors Notification
-An easy to use, implementation of the [Notification Pattern][notification-pattern]
 
 [![Build Status][ico-travis]][link-travis]
 [![Code Coverage][ico-scrutinizer]][link-scrutinizer]
@@ -9,6 +8,8 @@ An easy to use, implementation of the [Notification Pattern][notification-patter
 [![Software License][ico-license]][link-license]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![PHP Version][ico-php-version]][link-github]
+
+An easy to use, implementation of the [Notification Pattern][notification-pattern]
 
 ## Install
 
