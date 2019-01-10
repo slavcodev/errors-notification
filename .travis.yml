@@ -7,6 +7,7 @@ language: php
 php:
   - 7.1
   - 7.2
+  - 7.3
 
 ## Cache composer
 cache:
@@ -23,11 +24,12 @@ matrix:
   fast_finish: true
   include:
     - php: 7.1
+    - php: 7.2
       env:
         - EXECUTE_COVERAGE=true
-    - php: 7.2
+    - php: 7.3
   allow_failures:
-    - php: 7.2
+    - php: 7.3
 
 notifications:
   email: false
@@ -46,4 +48,4 @@ script:
   - if [[ $EXECUTE_COVERAGE != 'true' ]]; then ./vendor/bin/phpunit ; fi
 
 after_script:
-  - if [[ $EXECUTE_COVERAGE == 'true' ]]; then ./vendor/bin/ocular code-coverage:upload --format=php-clover $CLOVER_PATH ; fi
+  - if [[ $EXECUTE_COVERAGE == 'true' ]]; then ./vendor/bin/ocular code-coverage:upload --format=clover $CLOVER_PATH ; fi
