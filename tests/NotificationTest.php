@@ -66,8 +66,9 @@ final class NotificationTest extends TestCase
      */
     public function canClearNotificationErrors(Notification $notification): void
     {
-        $notification->clearErrors();
+        $errors = $notification->flushErrors();
         self::assertFalse($notification->hasErrors());
         self::assertCount(0, $notification);
+        self::assertCount(2, $errors);
     }
 }

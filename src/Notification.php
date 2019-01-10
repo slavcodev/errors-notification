@@ -43,11 +43,14 @@ final class Notification implements Countable, IteratorAggregate
     }
 
     /**
-     * Clear the notification errors.
+     * Flushes the notification errors.
      */
-    public function clearErrors(): void
+    public function flushErrors(): array
     {
+        $errors = $this->errors;
         $this->errors = [];
+
+        return $errors;
     }
 
     /**
